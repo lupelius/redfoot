@@ -24,46 +24,46 @@ function Footer({ ...props }) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        {false && <div className={classes.left}>
+        <div className={classes.left}>
           <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
+          <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/"
+                href="https://www.facebook.com/Redfoot-Your-Own-Shore-Team-677857789338047"
                 className={classes.block}
                 target="_blank"
               >
-                Creative Tim
+                Facebook
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/presentation"
+                href="https://twitter.com/OwnTeams"
                 className={classes.block}
                 target="_blank"
               >
-                About us
+                Twitter
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="http://blog.creative-tim.com/"
+                href="https://www.linkedin.com/company/14782769"
+                className={classes.block}
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </ListItem>
+            {/* <ListItem className={classes.inlineBlock}>
+              <a
+                href="/blog"
                 className={classes.block}
                 target="_blank"
               >
                 Blog
               </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
-              </a>
-            </ListItem>
+            </ListItem> */}
           </List>
-        </div>}
+        </div>
         <div className={classes.right}>
           &copy; {1900 + new Date().getYear()} , {" "}
           <a

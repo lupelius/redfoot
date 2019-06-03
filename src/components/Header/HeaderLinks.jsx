@@ -57,23 +57,6 @@ function HeaderLinks({ ...props }) {
       </ListItem>}
       {false && <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-twitter"
-          title="Follow us on twitter"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="https://twitter.com/CreativeTim"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
-          </Button>
-        </Tooltip>
-      </ListItem>}
-      {false && <ListItem className={classes.listItem}>
-        <Tooltip
           id="instagram-facebook"
           title="Follow us on facebook"
           placement={window.innerWidth > 959 ? "top" : "left"}
@@ -123,6 +106,21 @@ function HeaderLinks({ ...props }) {
           </Button>
         </Tooltip>
         <Tooltip
+          id="instagram-twitter"
+          title="Follow us on twitter"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href="https://twitter.com/OwnTeams"
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-twitter"} />
+          </Button>
+        </Tooltip>
+        <Tooltip
           id="linkedin"
           title="Follow us on LinkedIn"
           placement={window.innerWidth > 959 ? "top" : "left"}
@@ -138,7 +136,6 @@ function HeaderLinks({ ...props }) {
           </Button>
         </Tooltip>
       </ListItem>
-
     </List>
   );
 }

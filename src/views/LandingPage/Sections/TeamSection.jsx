@@ -19,6 +19,7 @@ import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/t
 import team1 from "assets/img/faces/cem.jpeg";
 import team2 from "assets/img/faces/serdar.jpeg";
 import team3 from "assets/img/faces/cosmin.jpeg";
+import team4 from "assets/img/faces/anna.jpeg";
 
 class TeamSection extends React.Component {
   render() {
@@ -33,7 +34,7 @@ class TeamSection extends React.Component {
         <h2 className={classes.title}>Here is our team</h2>
         <div>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={12} sm={12} md={3}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <img width="100" src={team1} alt="..." className={imageClasses} />
@@ -68,7 +69,7 @@ class TeamSection extends React.Component {
                 </CardFooter>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={12} sm={12} md={3}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <img width="100" src={team2} alt="..." className={imageClasses} />
@@ -112,7 +113,40 @@ class TeamSection extends React.Component {
                 </CardFooter>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={12} sm={12} md={3}>
+              <Card plain>
+                <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                  <img width="100" src={team4} alt="..." className={imageClasses} />
+                </GridItem>
+                <h4 className={classes.cardTitle}>
+                  Anna Szabo
+                  <br />
+                  <small className={classes.smallTitle}>Head of Sales</small>
+                </h4>
+                <CardBody>
+                  <p className={classes.description}>
+                    Anna has a very impressive career in recruitment and sales,
+                    where she quickly went up the corporate ladder wherever she
+                    worked due to her tenaciousness and determination combined with
+                    her intelligence and caring nature she had with all her clients,
+                    she is a great hire for Redfoot due to her experience.
+                  </p>
+                </CardBody>
+                <CardFooter className={classes.justifyCenter}>
+                  <Button
+                    justIcon
+                    color="transparent"
+                    className={classes.margin5}
+                    onClick={() =>
+                      (window.location.href = `https://linkedin.com/in/anna-szabo-b65856187/`)
+                    }
+                  >
+                  <i className={classes.socials + " fab fa-linkedin"} />
+                </Button>
+                </CardFooter>
+              </Card>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={3}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <img width="100" src={team3} alt="..." className={imageClasses} />
