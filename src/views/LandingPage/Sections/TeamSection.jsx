@@ -42,7 +42,7 @@ class TeamSection extends React.Component {
                 <h4 className={classes.cardTitle}>
                   Cem Temur
                   <br />
-                  <small className={classes.smallTitle}>CEO</small>
+                  <small className={classes.smallTitle}>Co founder</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
@@ -77,7 +77,7 @@ class TeamSection extends React.Component {
                 <h4 className={classes.cardTitle}>
                   Serdar (Sed) Senay
                   <br />
-                  <small className={classes.smallTitle}>CTO</small>
+                  <small className={classes.smallTitle}>Co founder</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
