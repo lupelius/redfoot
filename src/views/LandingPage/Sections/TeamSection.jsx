@@ -37,7 +37,12 @@ class TeamSection extends React.Component {
             <GridItem xs={12} sm={12} md={3}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img width="100" src={team1} alt="..." className={imageClasses} />
+                  <img
+                    width="100"
+                    src={team1}
+                    alt="..."
+                    className={imageClasses}
+                  />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
                   Cem Temur
@@ -72,7 +77,12 @@ class TeamSection extends React.Component {
             <GridItem xs={12} sm={12} md={3}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img width="100" src={team2} alt="..." className={imageClasses} />
+                  <img
+                    width="100"
+                    src={team2}
+                    alt="..."
+                    className={imageClasses}
+                  />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
                   Serdar (Sed) Senay
@@ -116,7 +126,12 @@ class TeamSection extends React.Component {
             <GridItem xs={12} sm={12} md={3}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img width="100" src={team4} alt="..." className={imageClasses} />
+                  <img
+                    width="100"
+                    src={team4}
+                    alt="..."
+                    className={imageClasses}
+                  />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
                   Anna Szabo

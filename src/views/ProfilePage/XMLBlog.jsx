@@ -6,27 +6,17 @@ export default class FetchDataFromRSSFeed extends React.Component {
   constructor() {
     super();
     this.state = {
-      recentBlogPost: {
-        name: "",
-        url: ""
-      }
+      feed: [],
     };
   }
 
   FetchDataFromRssFeed() {
-    const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
+    const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
     const that = this;
     parser.parseURL(
       CORS_PROXY + "https://medium.com/feed/dev-channel",
       function(_err, feed) {
-        feed.items.forEach(function(entry) {
-          that.setState({
-            recentBlogPost: {
-              name: entry.title,
-              url: entry.link
-            }
-          });
-        });
+        that.setState({ feed: feed.items });
       }
     );
     /* (async () => {
@@ -43,23 +33,23 @@ export default class FetchDataFromRSSFeed extends React.Component {
   }
 
   componentDidMount() {
-    {
-      this.FetchDataFromRssFeed();
-    }
+    this.FetchDataFromRssFeed();
   }
 
   render() {
     return (
-      <div>
-        Check out our blog:{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href={this.state.recentBlogPost.url}
-        >
-          {this.state.recentBlogPost.name}
-        </a>
-      </div>
+      <ul>
+        {this.state.feed.map((item, i) => (
+          <li key={i} style={{ textAlign: "left" }}>
+            <a target="_blank" rel="noopener noreferrer" href={item.link}>
+              <h2>{item.title}</h2>
+            </a>
+            {/* <div
+              dangerouslySetInnerHTML={{ __html: item["content:encoded"] }} LambdaWriteCloudWatchWriteDynamoDB 
+            /> */}
+          </li>
+        ))}
+      </ul>
     );
   }
 }
