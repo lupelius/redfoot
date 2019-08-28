@@ -12,6 +12,7 @@ import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 // import LoginPage from "views/LoginPage/LoginPage.jsx";
 import NoMatch from "views/404.jsx";
 import Blog from "./views/ProfilePage/Blog";
+import Education from "./views/ProfilePage/Education";
 
 var hist = createBrowserHistory();
 
@@ -22,6 +23,7 @@ ReactDOM.render(
       <Route path="/profile-page" component={LoginPage} /> */}
       <Route path="/blog/:title" component={ProfilePage} />
       <Route path="/blog" component={Blog} />
+      <Route path="/education" component={Education} />
       <Route exact path="/" component={LandingPage} />
       <Route component={NoMatch} />
     </Switch>

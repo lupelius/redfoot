@@ -38,18 +38,18 @@ export default class FetchDataFromRSSFeed extends React.Component {
 
   render() {
     return (
-      <ul>
+      <>
         {this.state.feed.map((item, i) => (
-          <li key={i} style={{ textAlign: "left" }}>
+          <div key={i} style={{ textAlign: "left", height: 50 }}>
             <a target="_blank" rel="noopener noreferrer" href={item.link}>
-              <h2>{item.title}</h2>
+              <h2 style={{ fontSize: 20 }}>{item.title}</h2>
             </a>
             {/* <div
               dangerouslySetInnerHTML={{ __html: item["content:encoded"] }} LambdaWriteCloudWatchWriteDynamoDB 
             /> */}
-          </li>
+          </div>
         ))}
-      </ul>
+      </>
     );
   }
 }

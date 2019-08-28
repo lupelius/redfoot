@@ -29,6 +29,7 @@ function Footer({ ...props }) {
           <ListItem className={classes.inlineBlock}>
               <a
                 href="https://www.facebook.com/Redfoot-Your-Own-Shore-Team-677857789338047"
+                alt="Redfoot Facebook Page"
                 className={classes.block}
                 target="_blank"
               >
@@ -38,6 +39,7 @@ function Footer({ ...props }) {
             <ListItem className={classes.inlineBlock}>
               <a
                 href="https://twitter.com/OwnTeams"
+                alt="Redfoot Twitter Page"
                 className={classes.block}
                 target="_blank"
               >
@@ -47,10 +49,31 @@ function Footer({ ...props }) {
             <ListItem className={classes.inlineBlock}>
               <a
                 href="https://www.linkedin.com/company/14782769"
+                alt="Redfoot LinkedIn Page"
                 className={classes.block}
                 target="_blank"
               >
                 LinkedIn
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="/education"
+                alt="Redfoot Education"
+                className={classes.block}
+                target="_blank"
+              >
+                Education
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="/blog"
+                alt="Redfoot tech blog"
+                className={classes.block}
+                target="_blank"
+              >
+                Blog
               </a>
             </ListItem>
             {/* <ListItem className={classes.inlineBlock}>
