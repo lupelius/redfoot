@@ -67,7 +67,7 @@ class ProfilePage extends React.Component {
                         {this.props.match.params.title}
                       </h3>
                       <h2>REDFOOT - EDUCATION RECRUITMENT SERVICES</h2>
-                      <h3><a href="tel:+44-16-2237-0288">+44 (0) 16 2237 0288</a></h3>
+                      <h3><a href="tel:+44-20-8638-6306">+44 (0) 20 8638 6306</a></h3>
                       <a href="https://www.facebook.com/Redfoot-Education-Recruitment-Services-116175283085848/">
                         <Button justIcon link className={classes.margin5}>
                           <i className={"fab fa-facebook"} />
