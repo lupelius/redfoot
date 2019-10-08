@@ -136,14 +136,14 @@ class TeamSection extends React.Component {
                 <h4 className={classes.cardTitle}>
                   Anna Szabo
                   <br />
-                  <small className={classes.smallTitle}>Head of Sales</small>
+                  <small className={classes.smallTitle}>Head of Talent Acquisition</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
                     Anna has a very impressive career in recruitment and sales,
                     where she quickly went up the corporate ladder wherever she
                     worked due to her tenaciousness and determination combined with
-                    her intelligence and caring nature she had with all her clients,
+                    her intelligence and caring nature she had with all her clients and talent,
                     she is a great hire for Redfoot due to her experience.
                   </p>
                 </CardBody>
