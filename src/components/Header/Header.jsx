@@ -74,13 +74,15 @@ class Header extends React.Component {
       [classes.fixed]: fixed
     });
     const brandComponent = (
-      <img
-        className={classes.title}
-        title={brand}
-        height="50"
-        src="/redfootlogowebnoslogan.jpg"
-        alt="Redfoot - Your Own-Shore Team"
-      />
+      <a href="/">
+        <img
+          className={classes.title}
+          title={brand}
+          height="50"
+          src="/redfootlogowebnoslogan.jpg"
+          alt="Redfoot - Your Own-Shore Team"
+        />
+      </a>
     );
     return (
       <AppBar className={appBarClasses}>

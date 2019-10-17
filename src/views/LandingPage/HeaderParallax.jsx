@@ -53,6 +53,12 @@ class LandingPage extends React.PureComponent {
                   <i className="fas fa-reply" />
                   Say hello!
                 </Button>
+                <Button
+                  size="lg"
+                  href={'/education'}
+                >
+                  Education Recruitment
+                </Button>
               </GridItem>
             </GridContainer>
           </div>

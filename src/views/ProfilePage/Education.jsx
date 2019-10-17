@@ -66,7 +66,7 @@ class ProfilePage extends React.Component {
                       <h3 className={classes.title}>
                         {this.props.match.params.title}
                       </h3>
-                      <h2>REDFOOT - EDUCATION RECRUITMENT SERVICES</h2>
+                      <h1 style={{fontSize: 20,fontWeight:'bold'}}>REDFOOT - EDUCATION RECRUITMENT SERVICES</h1>
                       <h3><a href="tel:+44-20-8638-6306">+44 (0) 20 8638 6306</a></h3>
                       <a href="https://www.facebook.com/Redfoot-Education-Recruitment-Services-116175283085848/">
                         <Button justIcon link className={classes.margin5}>
@@ -91,42 +91,86 @@ class ProfilePage extends React.Component {
                     color="primary"
                     tabs={[
                       {
+                        tabButton: "Jobs",
+                        tabContent: (
+                          <div align="left">
+                            <div style={{ padding:30, border:'1px solid grey', borderRadius: 10 }}>
+                              <h3>SEN Teacher - SE London - ASD School - £32k - £45k per annum- MPS / UPS + SEN Allowance - January Start - Permanent role</h3>
+                              <Button
+                                color="danger"
+                                size="lg"
+                                href={`/sen-teacher-se-london-32k-45k-mps-ups-perm`}
+                              >
+                                See Details
+                              </Button>
+                            </div>
+                            <div style={{ padding:30, border:'1px solid grey', borderRadius: 10,marginTop: 20 }}>
+                              <h3>SEN Teaching Assistant - Based in North London - £19k - £20k per annum - Special Needs School – ASAP Start - Permanent role</h3>
+                              <Button
+                                color="danger"
+                                size="lg"
+                                href={`/sen-teaching-assistant-north-london-19k-20k-special-needs-school-permanent`}
+                              >
+                                See Details
+                              </Button>
+                            </div>
+                            <div style={{ padding:30, border:'1px solid grey', borderRadius: 10,marginTop: 20 }}>
+                              <h3>SEN Teaching Assistant - Based in SE London - £70 - £85 per day - ASAP Start - Special Needs School – Long Term</h3>
+                              <Button
+                                color="danger"
+                                size="lg"
+                                href={`/sen-teaching-assistant-se-london-70-85-pd-asap-start-special-needs-school-long-term`}
+                              >
+                                See Details
+                              </Button>
+                            </div>
+                          </div>
+                        )
+                      },
+                      {
                         tabButton: "Schools",
                         tabContent: (
-                          <p>The education service starts with a visit to your school to understand the needs of the children and the School. This allows us to learn about your school and your needs to ensure we can provide the most suitable candidate.
-
-                          Redfoot Personalised Service
-                          The selection process is tailored to the individual school and is backed up by all the safeguards you’d expect in a leading Redfoot recruitment consultancy in line with the conduct regulations and DFE guidelines.
-                          
-                          Clients put their trust in us and strong relationships develop. As a result, the Redfoot Recruitment process has been designed in consultation with, and approved by our clients sharing the focus being the children and meeting their needs.
-                          
-                          This is what clients have to say about Redfoot Recruitment: “Our partnership is immensely successful because of the time and thought the team at Redfoot gives to understanding the needs of our children.”
-                          
-                          We recruit candidates who specialise in working with children with a range of special needs including SPLD, ASC, ESBD, ADHD, MLD, Dyspraxia, Dyslexia, Medical Needs and Mental Health.
-                          
-                          We have a range of roles and opportunities including full-time, part-time, day-to-day cover, long-term, short-term, temporary contract or permanent. Candidates are sourced from various jobs boards and word of mouth within the RedfootD sector and our bespoke recruitment process ensures that we have assessed them as being a good fit for the role.
-                          
-                          12 week ‘temp to perm packages’ are free from any perm fee. You can trial a candidate before offering employment. Many employees stay in their roles for 2, 3 years and longer.
-                          
-                          Would you like to discuss your recruitment needs? Please contact us today to find out more</p>
+                          <div align="left">
+                            <i>
+                              The education service starts with a visit to your school to understand the needs of the children and the School. This allows us to learn about your school and your needs to ensure we can provide the most suitable candidate.
+                            </i>
+                            <p>
+                              <h2>Redfoot Personalised Service</h2>
+                              The selection process is tailored to the individual school and is backed up by all the safeguards you’d expect in a leading Redfoot recruitment consultancy in line with the conduct regulations and DFE guidelines.
+                            </p>
+                            <p>
+                            Clients put their trust in us and strong relationships develop. As a result, the Redfoot Recruitment process has been designed in consultation with, and approved by our clients sharing the focus being the children and meeting their needs.
+                            </p><p>
+                            This is what clients have to say about Redfoot Recruitment: “Our partnership is immensely successful because of the time and thought the team at Redfoot gives to understanding the needs of our children.”
+                            </p><p>
+                            We recruit candidates who specialise in working with children with a range of special needs including SPLD, ASC, ESBD, ADHD, MLD, Dyspraxia, Dyslexia, Medical Needs and Mental Health.
+                            </p><p>
+                            We have a range of roles and opportunities including full-time, part-time, day-to-day cover, long-term, short-term, temporary contract or permanent. Candidates are sourced from various jobs boards and word of mouth within the RedfootD sector and our bespoke recruitment process ensures that we have assessed them as being a good fit for the role.
+                            </p><p>
+                            12 week ‘temp to perm packages’ are free from any perm fee. You can trial a candidate before offering employment. Many employees stay in their roles for 2, 3 years and longer.
+                            </p><p>
+                            Would you like to discuss your recruitment needs? Please contact us today to find out more</p>
+                          </div>
                         )
                       },
                       {
                         tabButton: "Candidates",
                         tabContent: (
-                          <p>Are you skilled and experienced in teaching and supporting children with special educational needs?
-
-                          We are recruiting for Teachers and Teaching Assistants and have a number of roles in both mainstream and special needs schools across the north west.
-                          
-                          Redfoot Recruitment operates a fair pay policy – please ask about the rates we pay for specific roles.
-                          
-                          Temporary and Permanant roles available with immediate starts. Each role is an excellent opportunity for a skilled, experienced and caring candidate who wants to feel rewarded for helping children move forward with their education.
-                          
-                          To comply with our ‘safer recruitment’ and DFE guidelines, we take up references and require all candidates to have a full enhanced DBS check and a face to face interview.
-                          
-                          We support all candidates through the recruitment process and help you settle into your new role once recruited.
-                          
-                          Does this sound of interest to you? It is easy to register with Redfoot Recruitment.</p>
+                          <div align="left">
+                            <p>Are you skilled and experienced in teaching and supporting children with special educational needs?
+                            </p><p>
+                            We are recruiting for Teachers and Teaching Assistants and have a number of roles in both mainstream and special needs schools across the north west.
+                            </p><p>
+                            Redfoot Recruitment operates a fair pay policy – please ask about the rates we pay for specific roles.
+                            </p><p>
+                            Temporary and Permanant roles available with immediate starts. Each role is an excellent opportunity for a skilled, experienced and caring candidate who wants to feel rewarded for helping children move forward with their education.
+                            </p><p>
+                            To comply with our ‘safer recruitment’ and DFE guidelines, we take up references and require all candidates to have a full enhanced DBS check and a face to face interview.
+                            </p><p>
+                            We support all candidates through the recruitment process and help you settle into your new role once recruited.
+                            </p><p>
+                            Does this sound of interest to you? It is easy to register with Redfoot Recruitment.</p>
+                          </div>
                         )
                       }
                     ]}

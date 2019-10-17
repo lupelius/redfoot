@@ -18,6 +18,35 @@ class WorkSection extends React.Component {
     return (
       <div className={classes.section}>
         <GridContainer justify="center">
+          <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
+            <h2 className={classes.title}>Software Engineering Jobs</h2>
+            <div align="left">
+              <div style={{ padding:30, border:'1px solid grey', borderRadius: 10 }}>
+                <h3 style={{ color: "black" }}>
+                  Savvy - React / React Native Fullstack Developer - Permanent
+                </h3>
+                <Button
+                  color="danger"
+                  size="lg"
+                  href={`/react-react-native-fullstack-developer-perm`}
+                >
+                  See Details
+                </Button>
+              </div>
+              <div style={{ padding:30, border:'1px solid grey', borderRadius: 10,marginTop: 20 }}>
+                <h3 style={{ color: "black" }}>Savvy - NodeJS and DevOps Backend Developer - Permanent</h3>
+                <Button
+                  color="danger"
+                  size="lg"
+                  href={`/node-devops-backend-developer-perm`}
+                >
+                  See Details
+                </Button>
+              </div>
+            </div>
+          </GridItem>
+        </GridContainer>
+        <GridContainer justify="center" style={{marginTop: 100}}>
           <GridItem cs={12} sm={12} md={8}>
             <h2 className={classes.title}>Work with us</h2>
             <h4 className={classes.description}>
